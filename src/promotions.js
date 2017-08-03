@@ -7,5 +7,5 @@ function loadPromotions() {
   }];
 }
 // module.exports = {loadPromotions:loadPromotions};
-module.exports = loadPromotions;
+// module.exports = loadPromotions;
 

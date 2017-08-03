@@ -1,11 +1,66 @@
-/* 
-请把与index.html页面相关的css代码写在这里
-同时删除该注释
-*/
-
-/* #message只是一个示例，可以删除 */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #9fd7ef;
+}
 #message {
+	clear: both;
 	height: 30px;
 	line-height: 30px;
-	border: 1px solid red;
+	margin: 0 auto;
+	text-align: center;
+	height: 350px;
+
+}
+.itembox {
+	margin: 10px 0;
+	float: left;
+	width: 200px;
+	height: 100px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 10px;
+}
+.itembox input {
+	width: 100px;
+}
+#items {
+	margin: 0 auto;
+	width: 400px;
+	overflow: hidden;
+}
+h1 {
+	margin: 0 auto;
+	text-align: center;
+}
+#promotions {
+	color: red;
+	text-align: center;
+}
+#button {
+	margin: 0 auto;
+	width: 80px;
+}
+#continue {
+	margin: 0 auto;
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	display: none;
+	background-color: green;
+	cursor: pointer;
+}
+#continue:hover {
+	background-color: skyblue;
+	transition: 0.5s;
+}
+button {
+	height: 20px;
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+
 }

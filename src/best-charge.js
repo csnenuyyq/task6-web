@@ -2,12 +2,12 @@
 // var lps = require('./promotions.js');
 // var loadAllItems = it.loadAllItems;
 // var loadPromotions = lps.loadPromotions;
-var loadAllItems = require('./items.js');
-var loadPromotions = require('./promotions.js');
+// var loadAllItems = require('./items.js');
+// var loadPromotions = require('./promotions.js');
 
 
-  let loadOne = loadAllItems();
-  let loadTwo = loadPromotions();
+//   let loadOne = loadAllItems();
+//   let loadTwo = loadPromotions();
 
   //buy amount obj
 function getInput(inputs){
@@ -81,7 +81,7 @@ function promotionWay(shoppingList){
 			text += '总计：'+count1+'元\n';
 			text += '===================================\n'			
 		}else {
-			text += '使用优惠:\n'+'指定菜品半价('+saleList.substr(0,saleList.length-1)+')，省'+13+'元\n';
+			text += '使用优惠:\n'+'指定菜品半价('+saleList.substr(0,saleList.length-1)+')，省'+(count-count2)+'元\n';
 			text += '-----------------------------------\n';
 			text += '总计：'+count2+'元\n';
 			text += '===================================\n'		
@@ -115,8 +115,8 @@ function bestCharge(inputs) {
  //    type: '指定菜品半价',
  //    items: ['ITEM0001', 'ITEM0022']
  //  }];
-  // let loadOne = loadAllItem();
-  // let loadTwo = loadPromotion();
+  let loadOne = loadAllItems();
+  let loadTwo = loadPromotions();
 	let shoppingList = getInput(inputs);
 	shoppingList = getMessage(shoppingList,loadOne);
 	shoppingList = getPromotionMes(shoppingList,loadTwo);
@@ -125,4 +125,4 @@ function bestCharge(inputs) {
 	text += temp;
  	return text;
 }
-module.exports = bestCharge;
+// module.exports = bestCharge;
